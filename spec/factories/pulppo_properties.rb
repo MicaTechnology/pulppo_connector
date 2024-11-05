@@ -14,7 +14,7 @@ FactoryBot.define do
 
     attributes {
       {
-        yearBuild: FFaker::Vehicle.year,
+        yearBuild: FFaker::Vehicle.year.to_i,
         expenses: FFaker::Random.rand(500..5000),
         expensesDescription: FFaker::Lorem.sentence,
         rooms: FFaker::Random.rand(1..10),
@@ -40,7 +40,7 @@ FactoryBot.define do
         neighborhood: FFaker::Address.neighborhood,
         floor: FFaker::Random.rand(1..20).to_s,
         apartment: FFaker::Random.rand(1..10).to_s,
-        location: { type: 'Point', coordinates: [FFaker::Geolocation.lat, FFaker::Geolocation.lng] }
+        location: { type: 'Point', coordinates: [FFaker::Geolocation.lat.to_s, FFaker::Geolocation.lng.to_s] }
       }
     }
 

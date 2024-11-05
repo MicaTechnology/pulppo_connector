@@ -6,7 +6,7 @@ module PulppoConnector
       class PropertyAttributes
         attr_accessor :yearBuild, :expenses, :expensesDescription, :rooms, :ampliation,
           :suites, :bathrooms, :toilettes, :parkings, :zonification,
-          :roofedSurface, :semiRoofedSurface, :totalSurface, :unroofedSurface
+          :roofedSurface, :semiroofedSurface, :totalSurface, :unroofedSurface
 
         def initialize(params = {})
           @yearBuild = params[:yearBuild]
@@ -20,7 +20,7 @@ module PulppoConnector
           @parkings = params[:parkings]
           @zonification = params[:zonification]
           @roofedSurface = params[:roofedSurface]
-          @semiRoofedSurface = params[:semiRoofedSurface]
+          @semiroofedSurface = params[:semiroofedSurface]
           @totalSurface = params[:totalSurface]
           @unroofedSurface = params[:unroofedSurface]
         end
