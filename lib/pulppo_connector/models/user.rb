@@ -5,11 +5,11 @@ module PulppoConnector
 
       def initialize(params = {})
         @id = params[:id]
-        @first_name = params[:first_name]
-        @last_name = params[:last_name]
+        @first_name = params[:firstName]
+        @last_name = params[:lastName]
         @email = params[:email]
         @phone = params[:phone]
-        @profile_picture = params[:profile_picture]
+        @profile_picture = params[:profilePicture]
       end
     end
   end
